@@ -77,7 +77,7 @@ Mit $\lambda=21 cm$ und $D=2.3 m$ ergibt sich:
 \end{equation}
 Dies entspricht einer Winkelauflösung von $6.3^\circ$.
 \\
-Das menschliche Auge hat eine Winkelauflösung von ungefähr einer Bogensekunde (im Bogenmaß: $2.9\cdot10^-4$). Um mit dem Teleskop eine solche Auflösung zu erreichen, müsste das Teleskop einen Durchmesser von
+Das menschliche Auge hat eine Winkelauflösung von ungefähr einer Bogensekunde (im Bogenmaß: $2.9\cdot10^{-4}$). Um mit dem Teleskop eine solche Auflösung zu erreichen, müsste das Teleskop einen Durchmesser von
 \begin{equation}
 D = 1.22\cdot\frac{\lambda}{\alpha} = 1.22\cdot\frac{0.21 m}{2.9\cdot10^-4} \approx 883 m
 \end{equation}
@@ -87,8 +87,28 @@ Die von der Sonne abgestrahlte Radiostrahlung besteht zum größten Teil aus Syn
 Das Intensitätsprofil eines Linienscans über die Sonne wird auch im Wesentlichen konstant sein, im Gegensatz z.B. zum optischen Intensitätsprofil, das zur Sonnenmitte hin aufgrund der höheren Temperatur im Inneren der Sonne höhere Intensitäten zeigen würde.
 \section{Vorübung 3}
 Das Wien'sche Strahlungsgesetz liefert für große Wellenlängen falsche Ergebnisse, also wird hier die Rayleigh-Jeans-Näherung verwendet.
-...
+Das Rayleigh-Jeans-Gesetz lautet für die gesamte abgestrahlte Leistung pro Fläche \footnote{Wikipedia. Rayleigh-Jeans-Gesetz. http://de.wikipedia.org/wiki/Rayleigh-Jeans-Gesetz. (27.2.2014, 15 Uhr)}: 
+\begin{equation}
+I(\nu) d\nu = \frac{2\pi \cdot k_B \cdot T \cdot \nu^2}{c^2} d\nu. 
+\end{equation}
+Dies ergibt für $ T = 5800 K$ und $\nu = \frac{c}{\lambda} = \frac{3.00\cdot 10^8}{0.21 m} = 1.43 \cdot 10^9 Hz$ eine abgestrahlte Leistung pro Fläche und Frequenzabschnitt von: 
+\begin{equation}
+I(1.43 10^{-9} Hz) = 1.14 \cdot 10^{-17} \frac{W}{m^2 \cdot Hz}.
+\end{equation}
+Da eine homogene Abstrahlung an der Sonnenoberfläche vorausgesetzt werden kann und die Leistungsentwicklung invers quadratisch mit dem Abstand geht, kommt an der Erde hiervon nur der Anteil $ (\frac{r_S}{1\ AE})^2 = (\frac{0.696 \cdot 10^{6} km}{149 \cdot 10^6 km})^2 \approx 2.18 \cdot 10^{-5} $ an, wobei $r_S$ der Sonnenradius und $ 1\ AE$ eine astronomische Einheit ist. 
+Für den Strahlungsstrom auf der Erde ergibt sich damit: 
+\begin{equation}
+S \approx 2.49 \cdot 10^{-22} \frac{W}{m^2 \cdot  Hz}.
+\end{equation}
+Dies ist eine um mehr als eine Größenordnung geringere Intensität als die gemessene. 
+Errechnet man umgekehrt die \enquote{effektive} Temperatur, also die Temperatur, die ein Schwarzkörper haben müsste, um die gleiche Intensität zu emittieren, so ergäbe sich aufgrund der Linearität von I und T bei konstanter Frequenz: 
+\begin{equation}
+T_{eff} = \frac{I_{gem}}{I} \cdot 5800 K = \frac{5 \cdot 10^{-21}}{2.49 \cdot 10^{-22}} \cdot 5800 K = 1.16 \cdot 10^5 K,
+\end{equation}
+wobei $I_{gem}$ die gemessene Intensität, $I$ die errechnete ist. 
+Die Radiostrahlung dieser Frequenz stammt vorwiegend aus der direkten Umgebung der Sonne. Dort ist das solare Magnetfeld noch sehr stark, sodass sich dort aus der Sonne stammende, freie Elektronen auf spiralförmigen Bahnen bewegen und somit die in 2 beschriebene Synchrotronstrahlung emittieren. 
+
 \section{Vorübung 4}
 Ein Wasserstoffatom besteht aus einem Proton und Elektron, die jeweils noch einen Eigendrehimpuls (Spin) besitzen. Die Spins können parallel oder antiparallel angeordnet sein, wobei dies jeweils einen unterschiedlichen Energiezustand entspricht. Bei einem Wasserstoffatom im Grundzustand kann sich der Spin des Elektrons von parallel (zum Spin des Protons) zu antiparallel ändern. Der antiparallele Spin entspricht einem niedrigeren Energiezustand, sodass Energie als Photon, welches gerade die Wellenlänge 21 cm besitzt, abgestrahlt wird.\
-Der Energiezustand mit parallelen Spins hat jedoch eine sehr lange Lebensdauer, deswegen kann dieser Übergang nur in Gebieten mit niedrigen Temperaturen ($\sim 100K$) (damit das Atom im Grundzustand ist) und geringen Teilchendichten (sonst würde der Energiezustand durch Stöße und den dadurch erfolgenden Energieübertrag "entvölkert" werden) stattfinden. Die Sonne ist im Vergleich zu den interstellaren Wasserstoffwolken weitaus heißer und dichter, deswegen ist im Sonnenspektrum keine 21 cm - Linie zu erwarten.
+Der Energiezustand mit parallelen Spins hat jedoch eine sehr lange Lebensdauer, deswegen kann dieser Übergang nur in Gebieten mit niedrigen Temperaturen ($\sim 100K$) (damit das Atom im Grundzustand ist) und geringen Teilchendichten (sonst würde der Energiezustand durch Stöße und den dadurch erfolgenden Energieübertrag \enquote{entvölkert} werden) stattfinden. Die Sonne ist im Vergleich zu den interstellaren Wasserstoffwolken weitaus heißer und dichter, deswegen ist im Sonnenspektrum keine 21 cm - Linie zu erwarten.
 \end{document}
