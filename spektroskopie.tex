@@ -89,6 +89,36 @@ d) Für hinreichend kleine $\alpha$ gilt diese Näherung. Somit ergibt sich unte
 \Delta \lambda = \frac{d\lambda}{d\alpha} \cdot \Delta \alpha = \frac{d}{n} \cdot \cos{\alpha} \cdot \frac{b}{f_{koll}}.
 \end{equation} 
 \section{Vorübung 2}
-Entsprechend der Vorübung 2 in Kapitel 7 ergibt sich eine Ausdehnung von $139\ \mu m$ in der Fokalebene. Ein Wert von etwa $140\ \mu m$ wäre also der kleinste mögliche Wert mit voller Lichteinstrahlung und somit der ideale Wert für die Blendenöffnung. 
-
+Entsprechend der Vorübung 2 in Kapitel 7 ergibt sich eine Ausdehnung von $2.79 \cdot 10^3\ \mu m$ in der Fokalebene. Ein Wert von etwa $2.79\ mm$ wäre also der kleinste mögliche Wert mit voller Lichteinstrahlung und somit der ideale Wert für die Blendenöffnung. 
+\section{Vorübung 3}
+Da $\alpha$ und $d$ konstant gehalten werden und $\beta$ konstant sein soll, muss für das Licht verschiedener Wellenlängen $n_1 \cdot \lambda_1 = n_2 \cdot \lambda_2$ gelten. 
+Somit: 
+\begin{equation}
+\lambda_n = \frac{33}{n} \cdot \lambda_{33}.
+\end{equation}
+Dies ergibt für n = 34 $\lambda_{34} \approx 6466.3195 \AA$, für n = 46 $\lambda_{46} \approx 4779.4536 \AA$ und für n = 58 $\lambda_{56} = 3790.6011 \AA$.
+\section{Vorübung 4}
+Es gilt:
+\begin{equation}
+R_{Spalt} = \frac{n\cdot f_{Koll}}{d\cdot b\cdot cos \alpha}\cdot \lambda
+\end{equation}
+Ersetze $\lambda$ durch $\lambda_n^0$:
+\begin{equation}
+R_{Echelle} = \frac{n\cdot f_{Koll}}{d\cdot b\cdot cos \alpha}\cdot \frac{d}{n}[sin \alpha + sin(2\Theta-\alpha)] = \frac{f_{Koll}}{b}\cdot [tan \alpha + \frac{sin(2\Theta-\alpha)}{cos \alpha}]
+\label{blabla}
+\end{equation}
+Setze Tabellenwerte ein:
+\begin{equation}
+R_{Echelle} = \frac{100 \cdot 10^{-3}m}{25 \cdot 10^{-6}m}\cdot [tan (73.2^{\circ}) + \frac{sin(53.8^{\circ})}{cos (73.2^{\circ})}] \approx 37000
+\end{equation}
+\section{Vorübung 5}
+Ersetze Größen aus Gleichung (\ref{blabla}) durch die kameraseitigen Größen ($b \rightarrow 2b_{Pixel}$) aus dem Nyquist-Kriterium)
+\begin{equation}
+R_{CCD} = \frac{f_{Kamera}}{2b_{Pixel}}\cdot [tan \beta + \frac{sin(2\Theta-\beta)}{cos \beta}]
+\end{equation}
+Setze Tabellenwerte ein:
+\begin{equation}
+R_{CCD} = \frac{150\cdot10^{-3}m}{18\cdot10^{-6}m}\cdot [tan (53.8^{\circ}) + \frac{sin(73.2^{\circ})}{cos (53.8^{\circ})}] \approx 25000
+\end{equation}
+Die Auflösung der CCD-Kamera ist in der gleichen Größenordnung wie die des Spektrographen. 
 \end{document}
