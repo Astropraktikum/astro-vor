@@ -64,28 +64,28 @@
 \newcommand{\C}{\mathbb{C}}
 
 %Klickbare Referenzen
-\usepackage[hidelinks]{hyperref}
+%\usepackage[hidelinks]{hyperref}
 
 \begin{document}
 \title{Vorübungen Fehlerrechnung}
 \section{Vorübung 1}
-i) $ d = (0.77 \pm 0.09)\ kpc $ \\
-ii) $ t = (1.6 \pm 1.3) \ s $ \\
-iii) $ \pi = (32.6 \pm 2.5) \cdot 10^{-3} \ arcsec $ \\
-iv) $ \lambda = (4861 \pm 5) \AA $ \\
-v) $ p = (3.250 \pm 0.05)\cdot  10^{3} \cdot  g\ cm\ s^{-1} $ \\
-vi) $ E = (11.13 \pm 0.29) \  keV $ \\
-vii) $ Q = (121.5 \pm 1.1) \cdot 10^{-16} \ C $ \\
-viii) $ B = (2.4 \pm 0.8)  \cdot 10^{11} T $ \\
-ix) $ F = (715 \pm 22)\ Jy $ \\
-x) $ \sigma = (240 \pm 100)\ mb $ 
+i) $ d = 0.77 \pm 0.09\, \mathrm{kpc} $ \\
+ii) $ t = 1.6 \pm 1.3 \, \mathrm{s} $ \\
+iii) $ \pi = (32.6 \pm 2.5) \cdot 10^{-3} \ \mathrm{arcsec} $ \\
+iv) $ \lambda = 4861 \pm 5 \, \mathrm{\AA} $ \\
+v) $ p = (3.25 \pm 0.05)\cdot  10^{3} \cdot  \mathrm{g\ cm\ s^{-1}} $ \\
+vi) $ E = 11.13 \pm 0.29 \,  \mathrm{keV} $ \\
+vii) $ Q = (121.5 \pm 1.1) \cdot 10^{-16} \, \mathrm{C} $ \\
+viii) $ B = (2.4 \pm 0.8)  \cdot 10^{11} \mathrm{T} $ \\
+ix) $ F = 715 \pm 22\, \mathrm{Jy} $ \\
+x) $ \sigma = 240 \pm 100\, \mathrm{mb} $ 
 
 \section{Vorübung 2}
 a) \\
 Nach den in der Anleitung angegebenen Formeln ergibt sich: \\
-i) $ \bar{log\ g} = \frac{(1.03 + 1.14 + 1.06 + 1.08 + 1.13 + 1.17) \ dex }{6} = 1.102\ (\pm 0.022) \ dex $  \\
+i) $ \overline{\log\ g} = \frac{(1.03 + 1.14 + 1.06 + 1.08 + 1.13 + 1.17) \ dex }{6} = 1.102\ (\pm 0.022) \ dex $  \\
 ii) $\sigma_{log\ g} = \sqrt{\frac{\Sigma(x_i - \bar{x})^2}{n-1}} = 0.053\ (\pm 0.017) \ dex $ \\
-iii) $\delta \bar{log\ g} = \frac{\sigma_{log\ g}}{\sqrt{n}}  = 0.022 \ dex $ \\
+iii) $\delta \overline{\log\ g} = \frac{\sigma_{log\ g}}{\sqrt{n}}  = 0.022 \ dex $ \\
 iv)  $ \delta \sigma_{log\ g} = \frac{\sigma_{log\ g}}{\sqrt{2n-2}} = 0.017 \ dex $ \\ \\
 b) \\
 Die nicht-logarithmische Größe ergibt sich offensichtlich durch Umkehrung des Logarithmus: 
@@ -99,13 +99,16 @@ i')
  \bar{g} = 10^{\bar{log\ g} \ dex^{-1}} \cdot cm\ s^{-2} = (12.7 \pm 0.7)\ cm\ s^{-2}. 
  \nonumber
 \end{equation}
-ii') Die in das CGS-System umgerechneten Werte in $cm\ s^{-2} $ ergeben sich unter Angabe hinreichend vieler Nachkommastellen zu: \\
-10.71519305, \\
-13.80384265, \\
-11.48153621, \\
-12.02264435, \\
-13.48962883, \\
-14.79108388. \\ \\
+ii') Die in das CGS-System umgerechneten Werte der Schwerebeschleunigung an der Oberfläche des Überriesen Deneb in $cm\ s^{-2} $ ergeben sich unter Angabe hinreichend vieler Nachkommastellen zu: \\
+\begin{itemize}
+\item 10.71519305,
+\item 13.80384265,
+\item 11.48153621,
+\item 12.02264435,
+\item 13.48962883,
+\item 14.79108388.
+\end{itemize}
+
 Mittels dieser Werte ergibt sich nach der in a) genannten Formel eine Standardabweichung von 
 \begin{equation}
 \sigma_{g} = (1.6 \pm 0.5)\ cm\ s^{-2}.
@@ -113,7 +116,7 @@ Mittels dieser Werte ergibt sich nach der in a) genannten Formel eine Standardab
 \end{equation}
 iii') 
 \begin{equation}
-\delta \bar{g} = |\frac{d}{d\ log\ g}\ g| \cdot \delta \bar{log\ g} = |[ln{10}\ dex^{-1} \cdot 10^{log\ g\cdot dex^{-1}}]_{\bar{log\ g}}| \cdot \delta \bar{log\ g}\cdot cm s ^{-2} =
+\delta {\bar{g}} = \left|\frac{d}{d\ log\ g}\ g\right| \cdot \delta \bar{log\ g} = |[ln{10}\ dex^{-1} \cdot 10^{log\ g\cdot dex^{-1}}]_{\bar{log\ g}}| \cdot \delta \bar{log\ g}\cdot cm s ^{-2} =
 \nonumber 
 \end{equation}
 \begin{equation}
